@@ -1,0 +1,272 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* black background color */
+    color: #fff; /* white text color */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    position: relative; /* Set body to relative positioning */
+    min-height: 100vh; /* Set minimum height to fill viewport */
+}
+/* HEADER */
+header {
+    background-color: #0F0; /* green background color */
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Align menu items to the right */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px; /* Add margin to separate menu items */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first menu item */
+}
+
+nav ul li a {
+    color: #000; /* black text color */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Add border-radius transition */
+    border-radius: 5px; /* Add border radius to menu items */
+}
+
+nav ul li a:hover {
+    background-color: #fff; /* white background color on hover */
+    color: #000; /* black text color on hover */
+    border-radius: 20px; /* Increase border radius on hover */
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side h1 {
+    margin: 0px; 
+    color: #000; /* Set color to black */
+    padding: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0F0; /* green background color */
+    color: #000; /* white text color */
+    padding: 20px 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+}
+
+/* MAIN */
+main {
+    padding-bottom: 150px; /* Ensure space for the footer */
+    margin-bottom: 80px;
+}
+/* Add styles for image and welcome content */
+.welcome-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Arrange image and text vertically */
+}
+
+.welcome-content img {
+    width: 300px; /* Adjust width as needed */
+    border-radius: 50%; /* Make the image round */
+    margin-bottom: 20px; /* Add space between image and text */
+    margin-top: 20px;
+}
+
+
+.welcome-text {
+    max-width: 800px; /* Limit width for better readability */
+    padding: 20px; /* Add padding for spacing */
+    font-size: 32px; /* Increase font size for the welcome text */
+}
+
+.welcome-text h1 {
+    font-size: 48px; /* Increase font size for the heading */
+    margin-bottom: 20px; /* Add margin between heading and paragraph */
+}
+
+.welcome-text p {
+    font-size: 24px; /* Increase font size for the paragraph */
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Arrange image and text vertically */
+    margin-top: 100px;
+}
+
+.about-text {
+    max-width: 800px; /* Limit width for better readability */
+    padding: 20px; /* Add padding for spacing */
+    font-size: 32px; /* Increase font size for the welcome text */
+}
+
+.about-text h1 {
+    font-size: 48px; /* Increase font size for the heading */
+    margin-bottom: 20px; /* Add margin between heading and paragraph */
+    color: #0F0;
+}
+
+.about-text p {
+    font-size: 24px; /* Increase font size for the paragraph */
+}
+
+
+.education-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Arrange image and text vertically */
+    margin-top: 100px;
+}
+
+.education-text {
+    max-width: 800px; /* Limit width for better readability */
+    padding: 20px; /* Add padding for spacing */
+    font-size: 32px; /* Increase font size for the welcome text */
+}
+
+.education-text h1 {
+    font-size: 48px; /* Increase font size for the heading */
+    margin-bottom: 20px; /* Add margin between heading and paragraph */
+    color: #0F0;
+
+}
+
+
+.education-text h3 {
+    font-size: 32px; /* Increase font size for the heading */
+    margin-bottom: 20px; /* Add margin between heading and paragraph */
+}
+.education-text p {
+    font-size: 24px; /* Increase font size for the paragraph */
+}
+
+
+.experience-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Arrange image and text vertically */
+    margin-top: 100px;
+}
+
+.experience-text {
+    max-width: 800px; /* Limit width for better readability */
+    padding: 20px; /* Add padding for spacing */
+    font-size: 32px; /* Increase font size for the welcome text */
+}
+
+.experience-text h1 {
+    font-size: 48px; /* Increase font size for the heading */
+    margin-bottom: 20px; /* Add margin between heading and paragraph */
+    color: #0F0;
+
+}
+
+.experience-text h2 {
+    font-size: 36px; /* Increase font size for the subheading */
+    margin-bottom: 10px; /* Add margin between heading and paragraph */
+}
+
+
+.experience-text h3 {
+    font-size: 30px; /* Increase font size for the subheading */
+    margin-bottom: 10px; /* Add margin between heading and paragraph */
+}
+
+.experience-text p {
+    font-size: 24px; /* Increase font size for the paragraph */
+    margin-bottom: 20px; /* Add margin between paragraphs */
+}
+
+
+
+.skills-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.skills-text {
+    padding: 20px;
+    font-size: 32px;
+}
+
+.skills-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #0F0;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px; /* Add padding to create separation */
+}
+
+
+.technical-skills,
+
+.technical-skills {
+    margin-right: 80px; /* Add margin to the right */
+}
+
+.soft-skills {
+    margin-left: 80px; /* Add margin to the left */
+}
+
+.technical-skills h2,
+.soft-skills h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.technical-skills ul,
+.soft-skills ul {
+    list-style: none;
+    padding: 0;
+    font-size: large;
+}
+
+.technical-skills ul li,
+.soft-skills ul li {
+    margin-bottom: 10px;
+    font-size: large;
+}
